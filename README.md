@@ -1,2 +1,7 @@
 # Olympus
-Olympus training application and all associated features
+Olympus training application
+
+Development Team:
+Ronzo
+Dajaco81
+
