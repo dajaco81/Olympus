@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('/fonts/times new roman.ttf');
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif!important;
+}
+
+.main-nav-container {
+    width: auto;
+}
+
+.main-nav {
+    background:#0f1212;
+}
+
+

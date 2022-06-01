@@ -1,0 +1,65 @@
+﻿@page
+@model OlympusTraining.Pages.TrainingPrograms.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TrainingProgram</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TrainingProgram.Id" />
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Goal" class="control-label"></label>
+                <input asp-for="TrainingProgram.Goal" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Goal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Archetype" class="control-label"></label>
+                <input asp-for="TrainingProgram.Archetype" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Archetype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Style" class="control-label"></label>
+                <input asp-for="TrainingProgram.Style" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Style" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Option" class="control-label"></label>
+                <input asp-for="TrainingProgram.Option" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Option" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Diet" class="control-label"></label>
+                <input asp-for="TrainingProgram.Diet" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Diet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Info" class="control-label"></label>
+                <input asp-for="TrainingProgram.Info" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Info" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingProgram.Price" class="control-label"></label>
+                <input asp-for="TrainingProgram.Price" class="form-control" />
+                <span asp-validation-for="TrainingProgram.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

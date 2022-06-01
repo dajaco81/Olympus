@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/OlympusTraining/.vs/OlympusTraining
+/OlympusTraining/OlympusTraining/bin/Debug/net6.0
+/OlympusTraining/OlympusTraining/obj
